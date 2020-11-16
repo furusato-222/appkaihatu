@@ -5,7 +5,7 @@ session_start();
 header('charset=utf8');
 //sessionからユーザーIDとフレンドの名前を変数に入れる
 $user_id = $_SESSION['user_id'];
-$friendname = $_SESSION['friend_name'];
+$friendname =  $_SESSION['friend_name'];
 
 //release.phpで決定ボタンを押したとき
 if (isset($_POST['sub'])) {

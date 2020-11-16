@@ -43,13 +43,12 @@ if (isset($resultset0)) {
         //森　修正　メモリの解放(queryを使用したので、その結果の変数を開放する)
         mysqli_free_result($result1);
     }
-}
 
-//ボタンをを押したとき
-if (isset($_POST['sub'])) {
     //セッションに名前を入れておく
     $_SESSION['friend_name'] = $resultset1['user_name'];
 }
+
+
 
 ?>
 <!DOCTYPE html>
