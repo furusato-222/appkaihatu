@@ -13,7 +13,7 @@ if (isset($_POST['sub']) && isset($_POST['ok'])) {
     //フォームリクエストの内容を取得
     $missword = htmlspecialchars($_POST['missword'], ENT_QUOTES, 'UTF-8');
 
-    if (!$conn = mysqli_connect("localhost", "root", "ecc", "test")) {
+    if (!$conn = mysqli_connect("localhost", "root", "ecc", "appkaihatu")) {
         //データベースに接続できない時のメッセージ
         exit("データベースに接続できません");
     }

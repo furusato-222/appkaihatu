@@ -7,7 +7,7 @@ if (isset($_POST['sub'])) {
     $password =  htmlspecialchars($_POST['pass'], ENT_QUOTES, 'UTF-8');
 
     //mysqlのtestに接続
-    if (!$conn = mysqli_connect("localhost", "root", "ecc", "test")) {
+    if (!$conn = mysqli_connect("localhost", "root", "ecc", "appkaihatu")) {
         //データベースに接続できない時のメッセージ
         exit("データベースに接続できません");
     }

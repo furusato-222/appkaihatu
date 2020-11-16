@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
   $password = htmlspecialchars($_POST['pass'], ENT_QUOTES, 'UTF-8');
 
   //データベースサーバに接続
-  if (!$conn = mysqli_connect("localhost", "root", "ecc", "test")) {
+  if (!$conn = mysqli_connect("localhost", "root", "ecc", "appkaihatu")) {
     exit("データベースに接続できません。");
   }
 

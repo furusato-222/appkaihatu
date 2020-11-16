@@ -12,7 +12,7 @@ if (isset($_POST['sub']) && isset($_POST['wordid'])) {
     $wordid = htmlspecialchars($_POST['wordid'], ENT_QUOTES, 'UTF-8');
     $level =  htmlspecialchars($_POST['level'], ENT_QUOTES, 'UTF-8');
 
-    if (!$conn = mysqli_connect("localhost", "root", "ecc", "test")) {
+    if (!$conn = mysqli_connect("localhost", "root", "ecc", "appkaihatu")) {
         //データベースに接続できない時のメッセージ
         exit("データベースに接続できません");
     }

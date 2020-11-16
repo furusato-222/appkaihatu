@@ -16,7 +16,7 @@ if (isset($_POST['sub'])) {
     $study = htmlspecialchars($_POST['study'], ENT_QUOTES, 'UTF-8');
 
     //データベースサーバに接続
-    if (!$conn = mysqli_connect('localhost', 'root', 'ecc', 'test')) {
+    if (!$conn = mysqli_connect('localhost', 'root', 'ecc', 'appkaihatu')) {
         //データベースに接続できない時のメッセージ
         exit("データベースに接続できません");
     }

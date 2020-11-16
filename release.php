@@ -5,7 +5,7 @@ session_start();
 header('charset=utf8');
 $user_id = $_SESSION['user_id'];
 
-if (!$conn = mysqli_connect("localhost", "root", "ecc", "test")) {
+if (!$conn = mysqli_connect("localhost", "root", "ecc", "appkaihatu")) {
     //データベースに接続できない時のメッセージ
     exit("データベースに接続できません");
 }
