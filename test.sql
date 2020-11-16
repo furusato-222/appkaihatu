@@ -161,7 +161,7 @@ ALTER TABLE `calendar`
 -- テーブルのインデックス `friend`
 --
 ALTER TABLE `friend`
-  ADD KEY `friend_user` (`user_id`);
+  ADD UNIQUE KEY `user_id` (`user_id`,`friendid`) USING BTREE;
 
 --
 -- テーブルのインデックス `missword`
